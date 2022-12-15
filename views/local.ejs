@@ -1,0 +1,13 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+       let socket = io('http://localhost:8040');
+            socket.on('connect',(msg)=>{
+                console.log(location.origin)
+            })
+
+            socket.on('socketid',(msg)=>{
+                console.log(msg)
+
+            });
+            
+</script>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            let socket = io('http://localhost:8080')
+            socket.on('connect',(msg)=>{
+                console.log(location.origin)
+            })
+        </script>
+    </body>
+</html>
